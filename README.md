@@ -8,4 +8,4 @@ Team Members: <br>
     3. <a href="https://github.com/wanderer3519"> Bhogaraju Shanmukha Sri Krishna </a> <br>
 
 # For more information about this project
-link to documentation :- https://docs.google.com/document/d/1IvvKiEwp2-9TxoKfwTvWl_DosPuY50Dz_Opc3-avi7o
+link to more details :- [https://docs.google.com/document/d/1IvvKiEwp2-9TxoKfwTvWl_DosPuY50Dz_Opc3-avi7o](https://docs.google.com/presentation/d/1MUgVDjUrzk8mMwwzn28mSKFLle8CEojJlna41vzVFp0/edit?slide=id.g3131a205fbf_1_15#slide=id.g3131a205fbf_1_15)
