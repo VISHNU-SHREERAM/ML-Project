@@ -1,12 +1,18 @@
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report, accuracy_score, confusion_matrix, ConfusionMatrixDisplay
+from sklearn.metrics import (
+    classification_report,
+    accuracy_score,
+    confusion_matrix,
+    ConfusionMatrixDisplay,
+)
 
 import matplotlib.pyplot as plt
 
+
 def classify_svc(X_train, y_train, X_test, y_test, **kwargs):
     clf = SVC(**kwargs)
-    
+
     # training set in x, y axis
     clf.fit(X_train, y_train)
     y_pred = clf.predict(X_test)
@@ -14,9 +20,10 @@ def classify_svc(X_train, y_train, X_test, y_test, **kwargs):
     accuracy_clf = accuracy_score(y_test, y_pred)
     print(f"Classification Accuracy: {accuracy_clf}")
 
-    
-    print('Classification Report',classification_report(y_test, y_pred))
-    return ConfusionMatrixDisplay(confusion_matrix(y_test, y_pred))
+    print("Classification Report", classification_report(y_test, y_pred))
+    cmd = ConfusionMatrixDisplay(confusion_matrix(y_test, y_pred))
+    cmd.plot(cmap=plt.cm.Blues)
+
 
 def classify_rf(X_train, y_train, X_test, y_test):
     # 3. Train a Random Forest Classifier
@@ -32,8 +39,10 @@ def classify_rf(X_train, y_train, X_test, y_test):
 
     # 6. Confusion matrix
     conf_matrix = confusion_matrix(y_test, y_pred_clf)
-    print('Classification Report',classification_report(y_test, y_pred_clf))
-    return ConfusionMatrixDisplay(conf_matrix)
+    print("Classification Report", classification_report(y_test, y_pred_clf))
+    cmd = ConfusionMatrixDisplay(conf_matrix)
+    cmd.plot(cmap=plt.cm.Blues)
+
 
 def compare_clf(X_train, y_train, X_test, y_test, classifiers):
     for name, model in classifiers.items():
