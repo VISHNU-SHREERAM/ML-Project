@@ -51,7 +51,9 @@ Key Highlights:
 
 ---
 
-## Repository Structure  
+## Repository Structure
+
+``` text
 .
 ├── data            # Data used for training (thanks to kaggle)
 │   ├── Sleep_health_and_lifestyle_dataset.csv
@@ -66,7 +68,7 @@ Key Highlights:
 ├── results             # Results of the training
 ├── requirements.txt    # Project dependencies
 └── src                 # Main part of the code
-
+```
 ---
 
 ## Getting Started  
