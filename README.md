@@ -60,10 +60,8 @@ Key Highlights:
 │   └── Sleep_health_and_lifestyle_dataset_part_2.csv
 ├── docs            # Documentation for the project
 │   └── ML Project.pdf
-├── notebooks       # Jupyter notebooks for visualization
-│   ├── endsem.ipynb
-│   ├── midsem.ipynb
-│   └── test.ipynb
+├── notebooks       # Jupyter notebooks for visualization (Here lies the core of the project)
+│   └── endsem.ipynb
 ├── README.md           # Readme
 ├── results             # Results of the training
 ├── requirements.txt    # Project dependencies
