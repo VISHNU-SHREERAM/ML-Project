@@ -96,7 +96,7 @@ pip install -r requirements.txt
 
 
 ## Documentation
-- Detailed methodology and results can be found in our project [report](docs/ML Project.pdf).
+- Detailed methodology and results can be found in our project [report](docs/ML_Project.pdf).
 
 ## Team
 - [Vishnu Shreeram M P](https://github.com/VISHNU-SHREERAM) 
